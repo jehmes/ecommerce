@@ -1,0 +1,38 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    position: absolute;
+    background: linear-gradient(135deg, #e90101, #e96a02);
+    border-right: solid 4px rgb(133, 3, 3);
+    width: 10rem;
+    height: 80px;
+    height: 100vh;
+}
+
+.menu {
+    position: absolute;
+    left: 10px;
+    top: 6px;
+    text-align: center;
+
+}
+
+.menu li {
+    margin-top: 5rem;
+    width: 110px;
+    font-size: 24px;
+    list-style: none;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu ul {
+    padding: 0;
+}
