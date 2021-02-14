@@ -16,10 +16,15 @@ const Card = props => {
         setCart([...cart, product])
     }
 
-    const removeToCart = product => {        
-        setCart(cart.splice(cart.indexOf(product) + 1, cart.length))       
+    const removeToCart = product => {      
+       let cartCopy = [...cart]
+       let index = cartCopy.indexOf(product)
+       if (index !== -1) {
+        cartCopy.splice(index, 1)
+        setCart(cartCopy)
+       }       
     }
-        
+
     return (
         //Build the card
         <>            
@@ -40,7 +45,7 @@ const Card = props => {
                     <button className='btn' onClick={() => {
                         addToCart(products)
                     }}>Adicionar</button>
-                    <button className='btn' onClick={() => {
+                    <button className='btn' onClick={(e) => {
                         removeToCart(products)
                     }}>Remover</button>
                 </div>
