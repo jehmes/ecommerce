@@ -8,8 +8,7 @@
     cursor: pointer;
     width: 10rem;
     display: inline-block;
-    font-family: 'Roboto', sans-serif;
-    
+    font-family: 'Roboto', sans-serif;    
 }
 
 .card:hover{

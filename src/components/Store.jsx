@@ -12,6 +12,6 @@ export const Store = props => {
 
     )
 }
-
+// sharing the cart
 export default Store;
 export const AppContext = React.createContext(Store)

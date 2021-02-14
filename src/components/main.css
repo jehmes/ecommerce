@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
 .main {
     position: absolute;
     left: 163px;
@@ -5,6 +7,21 @@
     height: 100vh;  
 }
 
-.btn-container{
-   margin-left: 5px;
+.filterButtons {
+    margin-left: 3px;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
 }
+
+.btn {
+    border-radius: 5px;   
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn:hover { 
+    /* border: rgb(76, 0, 255); */
+    background-color: rgb(255, 81, 0);
+    color: white;
+}
+
