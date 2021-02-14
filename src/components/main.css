@@ -2,26 +2,34 @@
 
 .main {
     position: absolute;
-    left: 163px;
-    width: 100%;
+    left: 100px;
+    width: 90%;
     height: 100vh;  
+  
 }
 
 .filterButtons {
-    margin-left: 3px;
-    position: absolute;
+    margin-right: 50px;
+    padding-left: 4rem;
+    position: fixed;
     font-family: 'Roboto', sans-serif;
 }
 
-.btn {
-    border-radius: 5px;   
-    cursor: pointer;
+.btn {  
+    background: 0 0;
+    transition: .3s;
     font-family: 'Roboto', sans-serif;
+    border: 1px solid rgb(255, 81, 0);
+    color: rgb(255, 81, 0);
+    border-radius: 50%;
+    width: 2.75rem;
+    height: 2.75rem;
+    padding: 0rem;
+    outline: none;  
 }
 
-.btn:hover { 
-    /* border: rgb(76, 0, 255); */
+.btn:hover {    
     background-color: rgb(255, 81, 0);
-    color: white;
+    color: white;    
 }
 

@@ -42,10 +42,10 @@ const Card = props => {
                 </h3>
                 <div>
                     <h3>Score: {props.data.score}</h3>        
-                    <button className='btn' onClick={() => {
+                    <button className='btn-card' onClick={() => {
                         addToCart(products)
                     }}>Adicionar</button>
-                    <button className='btn' onClick={(e) => {
+                    <button className='btn-card' onClick={(e) => {
                         removeToCart(products)
                     }}>Remover</button>
                 </div>

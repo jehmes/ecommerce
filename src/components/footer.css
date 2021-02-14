@@ -1,14 +1,19 @@
 .footer {
     padding-top: 15px;
     padding-bottom: 15px;
-    background-color: rgba(255, 0, 0, 0.3);
+    background: linear-gradient(135deg, #e90101, #e96a02);
+    opacity: 0.5;
     font-weight: normal;
     font-size: 12px;
     line-height: 16px;
     text-align: center;
-    color: rgb(0, 0, 0);
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    color: rgb(255, 255, 255);
+    position: fixed;
+    top: 90vh;
+    width: 91.6%;
     left: 164px;    
+  }
+
+  .footer a {
+    color: white;
   }

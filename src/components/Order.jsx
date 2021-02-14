@@ -12,17 +12,19 @@ const Order = props => {
     
     //show how many itens in cart
     const frete = number => {   
-            return number.cart.length * 10       
+            const value = number.cart.length * 10
+            value.toFixed(2).replace(".", ",")
+            return value    
     }
     
     return (
         <div className="order">
             <p>VALOR TOTAL</p>
-            <p>R$ {total.toFixed(2)}</p>
+            <p>R$ {total.toFixed(2).replace('.',',')}</p>
             <span><img src={cart}alt="imagem" className='cart'/></span>
             <span> {props.cart.length}</span>
             {/* if the freigth total value is higher than 250, show free */}
-            <p>Frete: {frete(props).toFixed(2) > 250 ? 'Grátis': `R$${frete(props).toFixed(2)}`}</p>
+            <p>Frete: {frete(props) > 250 ? 'Grátis': `R$${frete(props).toFixed(2).replace('.',',')}`}</p>
         </div>
     )
 }

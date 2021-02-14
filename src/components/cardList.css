@@ -1,13 +1,13 @@
 .products-list-container{
     display: flex;
-    justify-content: center;
+    justify-content: center;   
+    
 }
 
-.product-itens {
+.product-itens {   
     width: 70%;
     display: grid;
     grid-template-columns: repeat(auto-fill, 50px);
     grid-gap: 5px 170px;
-    justify-content: space-between;
-    margin-right: 600px;
+    justify-content: space-between;    
 }
