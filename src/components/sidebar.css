@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
 html,
 body {
     margin: 0;
     padding: 0;
-    
 }
 
 .logo {
@@ -11,21 +11,20 @@ body {
     background: linear-gradient(135deg, #e90101, #e96a02);
     border-right: solid 4px rgb(133, 3, 3);
     width: 10rem;
-    height: 80px;
     height: 100vh;
-    font-family: 'Roboto Mono', monospace; 
+    font-family: 'Roboto Mono', monospace;
 }
 
 .menu {
     position: absolute;
-    left: 10px;
+    left: 19px;
     top: 6px;
     text-align: center;
 }
 
 .menu li {
     margin-top: 5rem;
-    width: 110px;
+    text-align: center;
     font-size: 24px;
     list-style: none;
     transition: .3s;
@@ -36,14 +35,25 @@ body {
     text-decoration: none;
 }
 
-.menu ul {    
+.menu ul {
     padding: 0;
 }
 
-.menu li:hover{
+.menu li:hover {
     background-color: rgb(255, 115, 0);
     animation-delay: 0.4s;
     border-radius: 5px;
-    transform: scale(1.1);   
-   padding: 7px;
+    transform: scale(1.1);  
+}
+
+.free {
+    left: -5px;
+    position: absolute;
+    bottom: -540px;
+}
+
+.free:hover {
+    color: white;
+    transform: scale(1.1);  
+    background-color: rgb(69, 17, 255);
 }

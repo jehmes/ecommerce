@@ -2,10 +2,9 @@
 
 .main {
     position: absolute;
-    left: 100px;
+    left: 110px;
     width: 90%;
-    height: 100vh;  
-  
+    height: 100vh;    
 }
 
 .filterButtons {

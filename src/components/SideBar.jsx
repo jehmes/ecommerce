@@ -16,6 +16,9 @@ const SideBar = props => {
                         <li>
                             <a href="#">About us</a>
                         </li>
+                        <li className={'free'}>
+                            <h3>FRETE GRÁTIS ACIMA DE R$250,00</h3>
+                        </li>
                     </ul>
                 </nav>
             </header>

@@ -25,6 +25,10 @@ const Card = props => {
        }       
     }
 
+    //formated price
+    const price = products.price
+    const priceFormated = price.toFixed(2).replace('.',',')    
+
     return (
         //Build the card
         <>            
@@ -38,7 +42,7 @@ const Card = props => {
                     width={160}                   
                 />                
                 <h3 >
-                    R$ {products.price}
+                    R$ {priceFormated}
                 </h3>
                 <div>
                     <h3>Score: {props.data.score}</h3>        
@@ -51,9 +55,7 @@ const Card = props => {
                 </div>
             </div>
         </>
-
     )
-
 }
 
 export default Card
