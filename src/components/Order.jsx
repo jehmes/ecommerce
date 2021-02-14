@@ -1,5 +1,6 @@
 import React from 'react'
 import './order.css';
+import cart from '../assets/cart-icon.svg'
 
 const Order = props => {  
     let total = 0
@@ -16,7 +17,7 @@ const Order = props => {
         <div className="order">
             <p>VALOR TOTAL</p>
             <p>R$ {total.toFixed(2)}</p>
-            <span><img src="./cart-icon.svg" alt="imagem" /></span>
+            <span><img src={cart}alt="imagem" className='cart'/></span>
             <span> {props.cart.length}</span>
             <p>Frete: {frete(props).toFixed(2) > 250 ? 'Grátis': `R$${frete(props).toFixed(2)}`}</p>
         </div>

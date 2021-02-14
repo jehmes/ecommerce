@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
 html,
 body {
     margin: 0;
@@ -11,6 +12,8 @@ body {
     width: 10rem;
     height: 80px;
     height: 100vh;
+    font-family: 'Roboto Mono', monospace;
+   
 }
 
 .menu {
@@ -35,4 +38,13 @@ body {
 
 .menu ul {
     padding: 0;
+}
+
+.menu li:hover{
+    background-color: rgb(255, 115, 0);
+    animation-delay: 0.4s;
+    border-radius: 5px;
+    transform: scale(1.1);   
+    padding-left: 5px;
+    padding-right: 5px;
 }

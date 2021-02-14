@@ -7,6 +7,6 @@
     width: 90%;
     display: grid;
     grid-template-columns: repeat(auto-fill, 235px);
-    grid-gap: 20px 15px;
+    grid-gap: 5px 10px;
     justify-content: space-between;
 }

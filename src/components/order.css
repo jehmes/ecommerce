@@ -1,7 +1,13 @@
-.order{
-    width: 100%;      
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+.order {
+    width: 100%;
     position: absolute;
     bottom: 14.6vh;
     left: -150px;
-    
+    font-family: 'Roboto', sans-serif;
+}
+
+.cart {
+    width: 80px;
 }

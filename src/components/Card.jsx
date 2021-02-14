@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './card.css'
+import imagem from '../assets/call-of-duty-infinite-warfare.png'
 
 const Card = props => {
 
@@ -14,7 +15,9 @@ const Card = props => {
     const removeToCart = product => {        
         setCart(cart.splice(cart.indexOf(product) + 1, cart.length))       
     }
-
+    const images = products.image
+    console.log('dinamico', `../assets/${images}`)
+    console.log('f', imagem)
     return (
         <>            
             <div className='card'>
@@ -23,15 +26,16 @@ const Card = props => {
                 </h3>
 
                 <img
-                    src={products.image}                    
+                    src={products.image}                 
                     alt='Nome produto'
-                />
+                    width={160}
+                   
+                />                
                 <h3 >
                     R$ {products.price}
                 </h3>
                 <div>
-                    <h3>Score: {props.data.score}</h3>
-
+                    <h3>Score: {props.data.score}</h3>        
                     <button className='btn' onClick={() => {
                         addToCart(products)
                     }}>Adicionar</button>

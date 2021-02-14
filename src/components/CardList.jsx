@@ -14,7 +14,7 @@ const CardList = props => {
                 <div className='product-itens'>
                     {datas.map((products, i) => {
                         return (
-                            <Card data={products} image='' key={products.id} cart={cart} setCart={setCart} />
+                            <Card data={products} key={products.id} cart={cart} setCart={setCart} />
                         )
                     })}
                     <Store cart={cart} />
