@@ -49,6 +49,7 @@ const Main = props => {
 
     return (
         <div className="main">
+            
             <div className="filterButtons">
             <h3>Filtrar por:</h3>
                 <p>

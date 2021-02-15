@@ -8,13 +8,13 @@ const SideBar = props => {
                 <nav className="menu">
                     <ul>
                         <li>
-                            <a href="#">Inicio</a>
+                            <a href="#inicio">Inicio</a>
                         </li>
                         <li>
-                            <a href="#">Notícias</a>
+                            <a href="#noticias">Notícias</a>
                         </li>
                         <li>
-                            <a href="#">About us</a>
+                            <a href="#aboutus">About us</a>
                         </li>
                         <li className={'free'}>
                             <h3>FRETE GRÁTIS ACIMA DE R$250,00</h3>
